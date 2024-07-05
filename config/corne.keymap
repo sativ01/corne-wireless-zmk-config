@@ -21,10 +21,10 @@
 
             display-name = "Base";
             bindings = <
-&mt LS(Q) Q      &mt LS(W) W  &mt LS(E) E  &mt LS(R) R         &mt LS(T) T   &mt GRAVE ESC               &mt LS(MINUS) MINUS  &mt RS(Y) Y            &mt LS(U) U          &mt RS(I) I          &mt RS(P) O            &mt LS(P) P
-&mt LS(A) A      &mt LS(S) S  &mt LS(S) D  &mt LS(F) F         &mt LS(F) G   &mt LA(TAB) TAB             &mt RS(SQT) SQT      &mt LS(H) H            &mt RS(J) J          &mt LS(K) K          &mt LS(L) L            &mt RS(SEMICOLON) SEMICOLON
-&mt LS(LSHFT) Z  &mt LS(Z) X  &mt LS(X) C  &mt LS(C) V         &mt LS(V) B   &tog 1                      &mt LEFT_ALT TILDE   &mt RS(N) N            &mt RS(M) M          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH
-                                           &lt 2 LEFT_BRACKET  &lt 1 LS(N0)  &mt LG(SPACE) LEFT_BRACE    &mt LS(RET) RET      &mt RIGHT_SHIFT SPACE  &mt RCTRL BACKSPACE
+&mt LS(Q) Q      &mt LS(W) W  &mt LS(E) E  &mt LS(R) R         &mt LS(T) T   &mt LA(TAB) TAB     &mt LS(MINUS) MINUS  &mt RS(Y) Y            &mt LS(U) U          &mt RS(I) I          &mt RS(P) O            &mt LS(P) P
+&mt LS(A) A      &mt LS(S) S  &mt LS(S) D  &mt LS(F) F         &mt LS(F) G   &mt GRAVE ESCAPE    &mt RS(SQT) SQT      &mt LS(H) H            &mt RS(J) J          &mt LS(K) K          &mt LS(L) L            &mt RS(SEMICOLON) SEMICOLON
+&mt LS(LSHFT) Z  &mt LS(Z) X  &mt LS(X) C  &mt LS(C) V         &mt LS(V) B   &tog 1              &mt LEFT_ALT TILDE   &mt RS(N) N            &mt RS(M) M          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH
+                                           &lt 2 LEFT_BRACKET  &lt 1 LS(N0)  &kp LGUI            &mt LS(RET) RET      &mt RIGHT_SHIFT SPACE  &mt RCTRL BACKSPACE
             >;
         };
 
