@@ -19,7 +19,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "T_DH";
             #binding-cells = <0>;
-            bindings = <&kp H>, <&kp H>, <&mt H LS(H)>;
+            bindings = <&kp N1>, <&mt N1 LS(N1)>;
         };
     };
 
