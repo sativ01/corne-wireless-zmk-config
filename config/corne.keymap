@@ -14,6 +14,15 @@
 };
 
 / {
+    behaviors {
+        t_dh: t_dh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T_DH";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp H>, <&mt H LS(H)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -27,7 +36,7 @@
             display-name = "Base";
             bindings = <
 &mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E  &mt LS(R) R         &mt LS(T) T   &mt LA(TAB) TAB     &mt LS(MINUS) MINUS  &mt RS(Y) Y            &mt LS(U) U          &mt RS(I) I          &mt RS(P) O            &mt LS(P) P
-&mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F         &mt LS(G) G   &mt GRAVE ESCAPE    &mt RS(SQT) SQT      &mt LS(H) H            &mt RS(J) J          &mt LS(K) K          &mt LS(L) L            &mt RS(SEMICOLON) SEMICOLON
+&mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F         &mt LS(G) G   &mt GRAVE ESCAPE    &mt RS(SQT) SQT      &t_dh                  &mt RS(J) J          &mt LS(K) K          &mt LS(L) L            &mt RS(SEMICOLON) SEMICOLON
 &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C  &mt LS(V) V         &mt LS(B) B   &tog 1              &mt LEFT_ALT TILDE   &mt RS(N) N            &mt RS(M) M          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH
                                        &lt 1 LEFT_BRACKET  &lt 2 LS(N9)  &kp LGUI            &mt LS(RET) RET      &mt RIGHT_SHIFT SPACE  &mt RCTRL BACKSPACE
             >;
