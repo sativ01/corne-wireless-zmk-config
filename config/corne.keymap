@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
@@ -35,26 +34,10 @@
 
             display-name = "Base";
             bindings = <
-&kp Q  &kp W  &kp E  &kp R                      &kp T                            &mt ESCAPE GRAVE    &kp MINUS          &mt NUMBER_1 Y  &mt NUMBER_2 U  &mt I NUMBER_3  &mt N0 O  &mt EQUAL P
-&kp A  &kp S  &kp D  &kp F                      &kp G                            &kp TAB             &mt NUMBER_4 SQT   &mt N5 H        &mt NUMBER_6 J  &kp K           &kp L     &kp SEMI
-&kp Z  &kp X  &kp C  &kp V                      &kp B                            &kp RCTRL           &kp RIGHT_BRACKET  &mt N7 N        &mt N8 M        &mt N9 COMMA    &kp DOT   &FSL_FIND
-                     &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp LGUI            &mt LS(RET) RET    &kp SPACE       &kp BSPC
-            >;
-        };
-
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Lower";
-            bindings = <
-&kp TILDE   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp MINUS       &kp AMPERSAND          &kp ASTERISK     &kp N9             &kp RIGHT_PARENTHESIS  &mt LS(BACKSLASH) BACKSLASH
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans          &kp LEFT_ARROW         &kp DOWN         &kp UP_ARROW       &kp RIGHT              &trans
-&kp LSHFT   &trans           &trans        &trans        &trans        &trans          &trans          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans                 &trans
-                                           &trans        &trans        &trans          &kp LEFT_BRACE  &trans                 &trans
+&kp Q  &kp W                       &mt END E  &kp R                      &kp T                            &mt ESCAPE GRAVE                  &kp MINUS                                &mt NUMBER_1 Y  &mt NUMBER_2 U  &mt I NUMBER_3  &mt N0 O  &mt EQUAL P
+&kp A  &mt RC(RG(RS(NUMBER_4))) S  &kp D      &kp F                      &kp G                            &mt LA(TAB) TAB                   &mt NUMBER_4 SQT                         &mt N5 H        &mt NUMBER_6 J  &kp K           &kp L     &kp SEMI
+&kp Z  &kp X                       &kp C      &kp V                      &kp B                            &mt LS(LG(LEFT_BRACKET)) LCTRL    &mt RG(RS(RIGHT_BRACKET)) RIGHT_BRACKET  &mt N7 N        &mt N8 M        &mt N9 COMMA    &kp DOT   &FSL_FIND
+                                              &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp LGUI                          &lt 1 RET                                &kp SPACE       &kp BSPC
             >;
         };
 
@@ -67,10 +50,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &trans        &kp PLUS      &kp MINUS     &kp ASTRK     &kp SLASH     &kp EQUAL
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp GRAVE
-&trans  &trans  &trans  &trans   &trans   &trans     &kp NUMBER_6  &kp NUMBER_7  &kp N8        &kp N9        &kp N0        &kp TILDE
-                        &trans   &trans   &trans     &trans        &trans        &kp CAPS
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &trans  &kp PLUS  &kp MINUS  &kp ASTRK     &kp SLASH  &kp EQUAL
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &trans  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans   &trans   &trans     &trans  &trans    &trans     &trans        &trans     &trans
+                        &trans   &trans   &trans     &trans  &trans    &kp CAPS
             >;
         };
     };
