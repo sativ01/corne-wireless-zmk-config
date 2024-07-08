@@ -15,11 +15,11 @@
 
 / {
     behaviors {
-        td_shift_ctrl: td_shift_ctrl {
+        FSL_FIND: FSL_FIND {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SHIFT_CTRL";
+            label = "FSL_FIND";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&sk RCTRL>;
+            bindings = <&kp FSLH>, <&kp LC(LG(F))>;
         };
     };
 
@@ -35,10 +35,10 @@
 
             display-name = "Base";
             bindings = <
-&mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E  &mt LS(R) R         &mt LS(T) T   &mt LA(TAB) TAB     &mt LS(MINUS) MINUS  &mt RS(Y) Y  &mt LS(U) U    &mt RS(I) I          &mt RS(P) O            &mt LS(P) P
-&mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F         &mt LS(G) G   &mt GRAVE ESCAPE    &mt RS(SQT) SQT      &kp H        &kp J          &kp K                &kp L                  &mt RS(SEMICOLON) SEMICOLON
-&mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C  &mt LS(V) V         &mt LS(B) B   &td_shift_ctrl      &mt LEFT_ALT TILDE   &mt RS(N) N  &mt RS(M) M    &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH
-                                       &lt 1 LEFT_BRACKET  &lt 2 LS(N9)  &kp LGUI            &mt LS(RET) RET      &kp SPACE    &kp BACKSPACE
+&kp Q  &kp W  &kp E  &kp R                      &kp T                            &mt ESCAPE GRAVE    &kp MINUS          &mt NUMBER_1 Y  &mt NUMBER_2 U  &mt I NUMBER_3  &mt N0 O  &kp P
+&kp A  &kp S  &kp D  &kp F                      &kp G                            &kp TAB             &kp SQT            &kp H           &kp J           &kp K           &kp L     &kp SEMI
+&kp Z  &kp X  &kp C  &kp V                      &kp B                            &kp RCTRL           &kp RIGHT_BRACKET  &mt N7 N        &mt N8 M        &mt N9 COMMA    &kp DOT   &FSL_FIND
+                     &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp LGUI            &mt LS(RET) RET    &kp SPACE       &kp BSPC
             >;
         };
 
