@@ -35,8 +35,8 @@
 
             display-name = "Base";
             bindings = <
-&kp Q  &kp W  &kp E  &kp R                      &kp T                            &mt ESCAPE GRAVE    &kp MINUS          &mt NUMBER_1 Y  &mt NUMBER_2 U  &mt I NUMBER_3  &mt N0 O  &kp P
-&kp A  &kp S  &kp D  &kp F                      &kp G                            &kp TAB             &kp SQT            &kp H           &kp J           &kp K           &kp L     &kp SEMI
+&kp Q  &kp W  &kp E  &kp R                      &kp T                            &mt ESCAPE GRAVE    &kp MINUS          &mt NUMBER_1 Y  &mt NUMBER_2 U  &mt I NUMBER_3  &mt N0 O  &mt EQUAL P
+&kp A  &kp S  &kp D  &kp F                      &kp G                            &kp TAB             &mt NUMBER_4 SQT   &mt N5 H        &mt NUMBER_6 J  &kp K           &kp L     &kp SEMI
 &kp Z  &kp X  &kp C  &kp V                      &kp B                            &kp RCTRL           &kp RIGHT_BRACKET  &mt N7 N        &mt N8 M        &mt N9 COMMA    &kp DOT   &FSL_FIND
                      &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp LGUI            &mt LS(RET) RET    &kp SPACE       &kp BSPC
             >;
