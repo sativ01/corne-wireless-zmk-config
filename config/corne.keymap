@@ -34,10 +34,10 @@
 
             display-name = "Base";
             bindings = <
-&kp Q  &kp W                       &mt END E  &kp R               &kp T                            &mt GRAVE ESCAPE                     &kp MINUS                                &mt NUMBER_1 Y  &mt NUMBER_2 U  &mt NUMBER_3 I  &mt N0 O  &mt EQUAL P
-&kp A  &mt RC(RG(RS(NUMBER_4))) S  &kp D      &kp F               &kp G                            &mt LA(TAB) TAB                      &mt NUMBER_4 SQT                         &mt N5 H        &mt NUMBER_6 J  &kp K           &kp L     &kp SEMI
-&kp Z  &kp X                       &kp C      &kp V               &kp B                            &mt LS(LG(LEFT_BRACKET)) LEFT_ALT    &mt RG(RS(RIGHT_BRACKET)) RIGHT_BRACKET  &mt N7 N        &mt N8 M        &mt N9 COMMA    &kp DOT   &FSL_FIND
-                                              &lt 1 LEFT_BRACKET  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LGUI LEFT_BRACE                  &mt RCTRL RET                            &kp SPACE       &kp BSPC
+&mt NUMBER_1 Q  &mt NUMBER_2 W              &mt N3 E  &mt NUMBER_4 R      &mt N5 T                         &mt GRAVE ESCAPE                     &mt NUMBER_6 MINUS                       &mt N7 Y   &mt N8 U  &mt N9 I   &mt N0 O  &mt EQUAL P
+&kp A           &mt RC(RG(RS(NUMBER_4))) S  &kp D     &kp F               &kp G                            &mt LA(TAB) TAB                      &kp SQT                                  &kp H      &kp J     &kp K      &kp L     &kp SEMI
+&kp Z           &kp X                       &kp C     &kp V               &kp B                            &mt LS(LG(LEFT_BRACKET)) LEFT_ALT    &mt RG(RS(RIGHT_BRACKET)) RIGHT_BRACKET  &kp N      &kp M     &kp COMMA  &kp DOT   &FSL_FIND
+                                                      &lt 1 LEFT_BRACKET  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LGUI LEFT_BRACE                  &mt RCTRL RET                            &kp SPACE  &kp BSPC
             >;
         };
 
